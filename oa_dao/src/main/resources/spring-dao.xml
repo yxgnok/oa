@@ -21,12 +21,13 @@
     </bean>
 
     <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--<property name="mapperLocations" value="classpath*:com/kong/oa/dao/*Dao.xml"/>-->
         <property name="dataSource" ref="dataSource"/>
         <property name="typeAliasesPackage" value="com.kong.oa.entity"/>
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sessionFactory"/>
-        <property name="basePackage" value="com.imooc.oa.dao"/>
+        <property name="basePackage" value="com.kong.oa.dao"/>
     </bean>
 </beans>

@@ -4,12 +4,15 @@ import com.kong.oa.biz.DepartmentBiz;
 import com.kong.oa.dao.DepartmentDao;
 import com.kong.oa.entity.Department;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service("departmentBiz")
 public class DepartmentBizImpl implements DepartmentBiz {
+
+    @Qualifier("departmentDao")
     @Autowired
     private DepartmentDao departmentDao;
 

@@ -46,4 +46,14 @@ public class Employee {
     public void setPost(String post) {
         this.post = post;
     }
+
+    private Department department;
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
 }
