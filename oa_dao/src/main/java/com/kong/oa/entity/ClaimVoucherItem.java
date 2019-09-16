@@ -1,13 +1,13 @@
 package com.kong.oa.entity;
 
 public class ClaimVoucherItem {
-    private int id;
-    private int claimVoucherId;
+    private Integer id;
+    private Integer claimVoucherId;
     private String item;
     private Double amount;
     private String comment;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -15,7 +15,7 @@ public class ClaimVoucherItem {
         this.id = id;
     }
 
-    public int getClaimVoucherId() {
+    public Integer getClaimVoucherId() {
         return claimVoucherId;
     }
 

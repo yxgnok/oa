@@ -5,8 +5,8 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.util.Date;
 
 public class DealRecord {
-    private int id;
-    private int claimVoucherId;
+    private Integer id;
+    private Integer claimVoucherId;
     private String dealSn;
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm")
     private Date dealTime;
@@ -14,7 +14,7 @@ public class DealRecord {
     private String dealResult;
     private String comment;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -22,7 +22,7 @@ public class DealRecord {
         this.id = id;
     }
 
-    public int getClaimVoucherId() {
+    public Integer getClaimVoucherId() {
         return claimVoucherId;
     }
 
@@ -68,5 +68,15 @@ public class DealRecord {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    private Employee dealer;
+
+    public Employee getDealer() {
+        return dealer;
+    }
+
+    public void setDealer(Employee dealer) {
+        this.dealer = dealer;
     }
 }
