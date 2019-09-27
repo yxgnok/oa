@@ -1,9 +1,11 @@
 package com.kong.oa.dao;
 
 import com.kong.oa.entity.ClaimVoucher;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository("claimVoucherDao")
 public interface ClaimVoucherDao {
 
     void insert(ClaimVoucher claimVoucher);
